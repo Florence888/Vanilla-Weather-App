@@ -42,9 +42,9 @@ function formatDate(date) {
 function searchCity(city) {
 
 function search(city) {
-  let apiKey = "9f69a7315bb2cbb49c5ae35859e12b8a";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(displayTemperature);
+  let apiKey = "717018b022o87a3fa1t26613d04e15bb";
+  let apiUrl =  `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
+  axios.get(apiUrl).then(refreshWeather);
 }
 
 function handleSearchSubmit(event) {
